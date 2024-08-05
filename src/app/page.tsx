@@ -5,7 +5,7 @@ interface ChatMessage {
   sender: "user" | "bot";
   content: string;
 }
-export default function page() {
+export default function Page() {
   const chatData: ChatMessage[] = [
     { sender: "bot", content: "Welcome to awesome bank." },
   ];
@@ -28,7 +28,7 @@ export default function page() {
 
       try {
         // Call your backend API here
-        const response = await fetch("/api/chat", {
+        const response = await fetch("http://localhost:8080/v1/chats", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -41,7 +41,7 @@ export default function page() {
         }
 
         const data = await response.json();
-        const botMessage = data.response; // Assuming your API returns a 'response' field
+        const botMessage = data.message; // Assuming your API returns a 'response' field
 
         // Update the chat with the bot's response
         setMessages((prevMessages) => [
