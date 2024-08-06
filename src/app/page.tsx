@@ -28,7 +28,7 @@ export default function Page() {
 
       try {
         // Call your backend API here
-        const response = await fetch("http://localhost:8080/v1/chats", {
+        const response = await fetch("https://bankbot-chats-wlrrn53vra-uc.a.run.app/v1/chats", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
