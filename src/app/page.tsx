@@ -74,9 +74,9 @@ export default function Page() {
           </div>
           <div className="flex flex-col items-center bg-indigo-100 border border-gray-200 mt-4 w-full py-6 px-4 rounded-lg">
             <div className="h-20 w-20 rounded-full border overflow-hidden">
-              <img src="https://avatars.githubusercontent.com/u/160411163?s=128" alt="Avatar" className="h-full w-full" />
+              <img src="https://avatars.githubusercontent.com/u/166081520?s=128" alt="Avatar" className="h-full w-full" />
             </div>
-            <div className="text-sm font-semibold mt-2">Daisy Duck</div>
+            <div className="text-sm font-semibold mt-2">Hermione Granger</div>
             <div className="text-xs text-gray-500">ID: 48752987321</div>
           </div>
           <div className="flex flex-col mt-8">
@@ -127,7 +127,7 @@ export default function Page() {
                     >
                       <div className={`flex items-center ${message.sender === "user" ? "flex-row" : "flex-row-reverse"}`}>
                         <div className="flex items-center justify-center h-10 w-10 rounded-full bg-indigo-500 flex-shrink-0">
-                          {message.sender === "user" ? "DD" : "B"} 
+                          {message.sender === "user" ? "H" : "B"} 
                         </div>
                         <div className={`relative ml-3 text-sm ${message.sender === "user" ? "bg-white" : "bg-indigo-100"} py-2 px-4 shadow rounded-xl ${message.content === "bot is typing..." && "text-gray-500 italic"}`}>
                           <div>{message.content}</div>
